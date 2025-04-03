@@ -10,6 +10,12 @@ import UIKit
 class AdvantagesViewController: UIViewController {
     
     private let titleLabel = UILabel()
+    /*
+     ce genre de page c'est l'exemple parfait de page
+     où tu pourrais faire une UITableView vu qu'on a
+     un nombre dynamique de cards à afficher et
+     les cards se ressemblent
+    */
     private let scrollView = UIScrollView()
     private let contentStack = UIStackView()
 
@@ -62,6 +68,10 @@ class AdvantagesViewController: UIViewController {
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
+            /*
+             meme si ici une UITableView serait plus appropriée
+             t'as bien setup la scrollView et la contentStack 👍
+            */
             contentStack.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 16),
             contentStack.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 16),
             contentStack.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -16),

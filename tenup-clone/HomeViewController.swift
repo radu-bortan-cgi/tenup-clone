@@ -124,6 +124,13 @@ class HomeViewController: UIViewController {
         searchContainer.layer.borderWidth = 1
         searchContainer.layer.borderColor = UIColor.lightGray.cgColor
         // !FIX: Shadows not working...
+        /*
+         Ca fonctionne, c'est juste que l'opacité était trop faible,
+         si tu la mets à 1, ca fonctionne.
+         Il faudrait quand meme faire un modification parce que le
+         searchContainer n'a pas de remplissage du coup on voir l'ombre à travers.
+         Il faudrait mettre un backgroundColors pour searchContainer
+        */
         searchContainer.layer.shadowColor = UIColor.black.cgColor
         searchContainer.layer.shadowOpacity = 0.2
         searchContainer.layer.shadowOffset = CGSize(width: 0, height: 2)

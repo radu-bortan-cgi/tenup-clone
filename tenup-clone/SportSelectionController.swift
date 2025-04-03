@@ -58,6 +58,10 @@ class SportSelectionController: UIViewController {
         let beachTennisTile = SportNavigationTile(imageName: "RacketIcon", text: "BEACH TENNIS")
         let pickleBallTile = SportNavigationTile(imageName: "RacketIcon", text: "PICKLE BALL")
         
+        /*
+         ici il faudrait juste faire un pushViewController
+         sur le navigationController pour passer à la page suivante
+        */
         tennisTile.onTap = {
             print("LOL!")
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(viewController: MainTabBarControllerViewController()) }
