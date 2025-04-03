@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  tenup-clone
 //
-//  Created by Margerite Fortuna on 01/04/2025.
+//  Created by Margerite Fortuna on 25/03/2025.
 //
 
 import UIKit
